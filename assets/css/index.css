@@ -770,7 +770,7 @@ a {
     font-size: 14px;
     font-family: cursive;
     position: relative;
-    border-radius: 5px;
+    border-radius: 7px;
     -webkit-box-shadow: 1px 4px 10px #745af4;
             box-shadow: 1px 4px 10px #745af4;
   }
