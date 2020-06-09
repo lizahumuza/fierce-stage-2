@@ -1,0 +1,148 @@
+$primary-color: #745AF7
+$secondary-color: #F5B943
+$white-color: #fff
+$footer-color: #080227
+
+
+
+
+* 
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+
+html 
+    scroll-behavior: smooth
+
+
+body
+    
+
+nav
+    width: 100%
+    padding: 25px 15px
+    display: flex
+    justify-content: space-between
+    
+
+    
+    .logo
+        
+        h1
+            margin-right: 25px
+    
+    .nav_links
+        display: flex
+        background-color: #ffffff
+        li
+            list-style: none
+            margin: 15px
+            .links
+                text-decoration: none
+                padding: 5px 0
+                &:hover, &:active
+                    transition: 450ms
+                    color: $secondary-color
+            .active
+                border-bottom: 3px solid $primary-color
+                &:hover, &:active
+                    border-bottom: 3px solid $secondary-color
+
+header
+    // background-color: #333
+    height: 80vh
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    .header_image
+        background-image: url("https://res.cloudinary.com/dd4c9cnmd/image/upload/v1591642987/temp_hold/header_txmack.svg") fixed center no-repeat
+        // background: url('/assets/images/header.svg') fixed center no-repeat
+        // background-color: #444
+        background-size: cover
+        height: 400px
+        img
+            object-fit: cover
+    .actions
+        background-color: #3e4        
+        display: flex
+        justify-content: center
+        padding: 25px 0
+        width: 50%
+        // align-items: center
+        
+        button
+            outline: none
+            border: none
+            padding: 15px 25px
+            margin: 0 25px
+            &:hover
+                background-color: #dd8833
+                cursor: pointer
+.secondary 
+    background-color: $secondary-color
+.primary 
+    background-color: $primary-color
+
+.button
+    outline: none
+    border: none
+    text-decoration: none
+    padding: 15px 25px
+    background-color: #dd8833
+    color: $white-color
+    margin: 0 25px
+    &:hover
+        cursor: pointer
+
+main
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .rooms
+        margin-top: 150px
+        text-align: center
+        display: flex
+        flex-direction: column
+        row
+            display: flex
+            flex-direction: row
+            width: 100%
+        // grid-template-columns: 30% 30%
+        .room
+            display: flex
+            img
+
+            .room_info
+                display: flex
+                flex-direction: column
+                margin-left: 25px
+                text-align: left
+                justify-content: center
+    .search_bar
+        background-color: #e4e
+        // width: 100%
+        input
+            // width: 50%
+            padding: 15px 25px
+
+footer 
+    margin-top: 50px
+    background-color: $footer-color
+    color: $white-color
+    padding: 35px 15px 15px 15px
+    display: flex
+    justify-content: space-evenly
+    section
+        
+
+    .footer_links
+        display: flex
+        flex-direction: column
+        a
+            text-decoration: none
+            color: $white-color
+    .connect
+        text-align: center

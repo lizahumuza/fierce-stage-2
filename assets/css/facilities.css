@@ -1,0 +1,229 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  width: 100%;
+  padding: 25px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .logo h1 {
+  margin-right: 25px;
+}
+
+nav .nav_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ffffff;
+}
+
+nav .nav_links li {
+  list-style: none;
+  margin: 15px;
+}
+
+nav .nav_links li .links {
+  text-decoration: none;
+  padding: 5px 0;
+}
+
+nav .nav_links li .links:hover, nav .nav_links li .links:active {
+  -webkit-transition: 450ms;
+  transition: 450ms;
+  color: #F5B943;
+}
+
+nav .nav_links li .active {
+  border-bottom: 3px solid #745AF7;
+}
+
+nav .nav_links li .active:hover, nav .nav_links li .active:active {
+  border-bottom: 3px solid #F5B943;
+}
+
+header {
+  height: 80vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header_image {
+  background-image: url("https://res.cloudinary.com/dd4c9cnmd/image/upload/v1591642987/temp_hold/header_txmack.svg") fixed center no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+header .header_image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header .actions {
+  background-color: #3e4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 25px 0;
+  width: 50%;
+}
+
+header .actions button {
+  outline: none;
+  border: none;
+  padding: 15px 25px;
+  margin: 0 25px;
+}
+
+header .actions button:hover {
+  background-color: #dd8833;
+  cursor: pointer;
+}
+
+.secondary {
+  background-color: #F5B943;
+}
+
+.primary {
+  background-color: #745AF7;
+}
+
+.button {
+  outline: none;
+  border: none;
+  text-decoration: none;
+  padding: 15px 25px;
+  background-color: #dd8833;
+  color: #fff;
+  margin: 0 25px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .rooms {
+  margin-top: 150px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .rooms row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+main .rooms .room {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .rooms .room .room_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 25px;
+  text-align: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .search_bar {
+  background-color: #e4e;
+}
+
+main .search_bar input {
+  padding: 15px 25px;
+}
+
+footer {
+  margin-top: 50px;
+  background-color: #080227;
+  color: #fff;
+  padding: 35px 15px 15px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .footer_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer_links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .connect {
+  text-align: center;
+}
+/*# sourceMappingURL=facilities.css.map */
