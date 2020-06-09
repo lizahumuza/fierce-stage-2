@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+
 $primary-color: #745AF7
 $secondary-color: #F5B943
 $white-color: #fff
 $footer-color: #080227
+
+$primary-font: Roboto
 
 
 
@@ -14,10 +21,12 @@ $footer-color: #080227
 
 html 
     scroll-behavior: smooth
+    font-family: $primary-font
 
 
 body
-    
+    width: 100%
+    overflow-x: hidden
 
 nav
     width: 100%
@@ -35,15 +44,19 @@ nav
     .nav_links
         display: flex
         background-color: #ffffff
+        font-family: $primary-font
+
         li
             list-style: none
+            font-family: $primary-font
             margin: 15px
             .links
                 text-decoration: none
-                padding: 5px 0
+                padding: 10px 10px
                 &:hover, &:active
                     transition: 450ms
-                    color: $secondary-color
+                    // color: $secondary-color
+                    background-color: $secondary-color
             .active
                 border-bottom: 3px solid $primary-color
                 &:hover, &:active
@@ -51,34 +64,42 @@ nav
 
 header
     // background-color: #333
-    height: 80vh
+    height: 30vh
     position: relative
     display: flex
     flex-direction: column
     align-items: center
     .header_image
-        background-image: url("https://res.cloudinary.com/dd4c9cnmd/image/upload/v1591642987/temp_hold/header_txmack.svg") fixed center no-repeat
-        // background: url('/assets/images/header.svg') fixed center no-repeat
-        // background-color: #444
+        // background-image: url("https://res.cloudinary.com/dd4c9cnmd/image/upload/v1591642987/temp_hold/header_txmack.svg") fixed center no-repeat
+        background: url('./assets/images/header.svg') fixed center no-repeat
+        background-color: #444
         background-size: cover
-        height: 400px
-        img
-            object-fit: cover
+        height: 40%
+        // img
+        //     object-fit: cover
     .actions
-        background-color: #3e4        
+        // background-color: #3e4        
+        background-color: $white-color
+
         display: flex
-        justify-content: center
+        font-family: $primary-font
+        justify-content: space-evenly
         padding: 25px 0
-        width: 50%
+        width: 70%
+        border-radius: 10px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         // align-items: center
         
         button
-            outline: none
-            border: none
+            outline: 0
+            border: 0
             padding: 15px 25px
             margin: 0 25px
+            border-radius: 10px
+            color: $white-color
+            font-weight: 600
             &:hover
-                background-color: #dd8833
+                background-color: #3b3733
                 cursor: pointer
 .secondary 
     background-color: $secondary-color
@@ -91,6 +112,7 @@ header
     text-decoration: none
     padding: 15px 25px
     background-color: #dd8833
+    border-radius: 10px
     color: $white-color
     margin: 0 25px
     &:hover
@@ -101,32 +123,67 @@ main
     flex-direction: column
     justify-content: center
     align-items: center
-    .rooms
-        margin-top: 150px
-        text-align: center
+    .container
+        // background-color: #ddd
+        width: 60%
         display: flex
         flex-direction: column
-        row
+        justify-content: center
+        align-items: center
+        .rooms
+            margin-top: 150px
+            text-align: center
             display: flex
-            flex-direction: row
-            width: 100%
-        // grid-template-columns: 30% 30%
-        .room
-            display: flex
-            img
-
-            .room_info
+            flex-direction: column
+            .row
                 display: flex
-                flex-direction: column
-                margin-left: 25px
-                text-align: left
-                justify-content: center
-    .search_bar
-        background-color: #e4e
-        // width: 100%
-        input
-            // width: 50%
-            padding: 15px 25px
+                width: 100%
+                margin: 50px 25px
+                padding: 35px 0
+                justify-content: space-between
+            .room
+                display: flex
+                img
+
+                .room_info
+                    display: flex
+                    flex-direction: column
+                    margin-left: 25px
+                    position: relative
+                    text-align: left
+                    justify-content: center
+                    h2
+                        color: $primary-color
+                        font-weight: 400
+                    a
+                        outline: none
+                        border: none
+                        text-decoration: none
+                        padding: 15px 25px
+                        background-color: #dd8833
+                        border-radius: 10px
+                        color: $white-color
+                        // margin: 25px 0
+                        margin-top: 25px
+                        position: relative
+                        left: 0
+                        bottom: 0
+                        &:hover
+                            cursor: pointer
+
+        .search_bar
+            width: 100%
+            justify-content: center
+            display: flex
+            input
+                width: 70%
+                padding: 25px 25px
+                border-radius: 10px
+                outline: 0
+            button
+                padding: 25px 45px
+                font-size: 18px
+                letter-spacing: 1px
 
 footer 
     margin-top: 50px
@@ -146,3 +203,10 @@ footer
             color: $white-color
     .connect
         text-align: center
+
+@media (max-width: 928px)
+    .row
+        display: flex
+        flex-direction: column
+        padding: 0
+        margin: 0
