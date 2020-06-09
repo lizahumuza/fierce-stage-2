@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -7,6 +8,12 @@
 
 html {
   scroll-behavior: smooth;
+  font-family: Roboto;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 nav {
@@ -29,22 +36,24 @@ nav .nav_links {
   display: -ms-flexbox;
   display: flex;
   background-color: #ffffff;
+  font-family: Roboto;
 }
 
 nav .nav_links li {
   list-style: none;
+  font-family: Roboto;
   margin: 15px;
 }
 
 nav .nav_links li .links {
   text-decoration: none;
-  padding: 5px 0;
+  padding: 10px 10px;
 }
 
 nav .nav_links li .links:hover, nav .nav_links li .links:active {
   -webkit-transition: 450ms;
   transition: 450ms;
-  color: #F5B943;
+  background-color: #F5B943;
 }
 
 nav .nav_links li .active {
@@ -56,7 +65,7 @@ nav .nav_links li .active:hover, nav .nav_links li .active:active {
 }
 
 header {
-  height: 80vh;
+  height: 30vh;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,37 +80,40 @@ header {
 }
 
 header .header_image {
-  background-image: url("https://res.cloudinary.com/dd4c9cnmd/image/upload/v1591642987/temp_hold/header_txmack.svg") fixed center no-repeat;
+  background: url("./assets/images/header.svg") fixed center no-repeat;
+  background-color: #444;
   background-size: cover;
-  height: 400px;
-}
-
-header .header_image img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 40%;
 }
 
 header .actions {
-  background-color: #3e4;
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  font-family: Roboto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   padding: 25px 0;
-  width: 50%;
+  width: 70%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 header .actions button {
-  outline: none;
-  border: none;
+  outline: 0;
+  border: 0;
   padding: 15px 25px;
   margin: 0 25px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
 }
 
 header .actions button:hover {
-  background-color: #dd8833;
+  background-color: #3b3733;
   cursor: pointer;
 }
 
@@ -119,6 +131,7 @@ header .actions button:hover {
   text-decoration: none;
   padding: 15px 25px;
   background-color: #dd8833;
+  border-radius: 10px;
   color: #fff;
   margin: 0 25px;
 }
@@ -143,7 +156,24 @@ main {
           align-items: center;
 }
 
-main .rooms {
+main .container {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .container .rooms {
   margin-top: 150px;
   text-align: center;
   display: -webkit-box;
@@ -155,24 +185,25 @@ main .rooms {
           flex-direction: column;
 }
 
-main .rooms row {
+main .container .rooms .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   width: 100%;
+  margin: 50px 25px;
+  padding: 35px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-main .rooms .room {
+main .container .rooms .room {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main .rooms .room .room_info {
+main .container .rooms .room .room_info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,18 +212,57 @@ main .rooms .room .room_info {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: 25px;
+  position: relative;
   text-align: left;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-main .search_bar {
-  background-color: #e4e;
+main .container .rooms .room .room_info h2 {
+  color: #745AF7;
+  font-weight: 400;
 }
 
-main .search_bar input {
+main .container .rooms .room .room_info a {
+  outline: none;
+  border: none;
+  text-decoration: none;
   padding: 15px 25px;
+  background-color: #dd8833;
+  border-radius: 10px;
+  color: #fff;
+  margin-top: 25px;
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+
+main .container .rooms .room .room_info a:hover {
+  cursor: pointer;
+}
+
+main .container .search_bar {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .container .search_bar input {
+  width: 70%;
+  padding: 25px 25px;
+  border-radius: 10px;
+  outline: 0;
+}
+
+main .container .search_bar button {
+  padding: 25px 45px;
+  font-size: 18px;
+  letter-spacing: 1px;
 }
 
 footer {
@@ -225,5 +295,19 @@ footer .footer_links a {
 
 footer .connect {
   text-align: center;
+}
+
+@media (max-width: 928px) {
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=facilities.css.map */
