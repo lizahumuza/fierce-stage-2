@@ -1,6 +1,28 @@
+const body = document.querySelector("body");
+
+const hambuger = document.querySelector(".hambuger__menu");
+
+const nav = document.querySelector(".header-list");
+
+hambuger.addEventListener("click", () => {
+	hambuger.classList.toggle("change");
+	body.classList.toggle("change");
+	nav.classList.toggle("change");
+});
+
+window.addEventListener("scroll", () => {
+	let scrollPos = window.scrollY;
+
+	if (scrollPos > 90) {
+		nav.classList.add("handle-scroll");
+	} else {
+		nav.classList.remove("handle-scroll");
+	}
+});
+
 const slideUp = {
 	distance: "350%",
-	origin: "bottom",
+	origin: "right",
 	opacity: null,
 	delay: 250,
 	reset: false,
