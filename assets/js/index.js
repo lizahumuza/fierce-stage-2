@@ -1,15 +1,17 @@
+// constants
 const body = document.querySelector("body");
 
 const hambuger = document.querySelector(".hambuger__menu");
 
 const nav = document.querySelector(".header-list");
-
+// nav bar toggler
 hambuger.addEventListener("click", () => {
 	hambuger.classList.toggle("change");
 	body.classList.toggle("change");
 	nav.classList.toggle("change");
 });
 
+// scroll toggler
 window.addEventListener("scroll", () => {
 	let scrollPos = window.scrollY;
 
@@ -20,6 +22,7 @@ window.addEventListener("scroll", () => {
 	}
 });
 
+// slide animations
 const slideUp = {
 	distance: "350%",
 	origin: "right",

@@ -546,6 +546,7 @@ a {
     border-radius: 10px;
     -webkit-transform: translateY(-1000px);
             transform: translateY(-1000px);
+    background-color: #f7fafc;
   }
   .header-main .header-list li {
     margin: 4vw auto;
@@ -643,7 +644,9 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    font-size: 14px;
+    font-size: 12px;
+    padding: 0 0.5rem;
+    margin: 0;
   }
   .footer-main .footer-con .footer-list2 {
     text-align: center;
@@ -767,7 +770,7 @@ a {
     font-size: 14px;
     font-family: cursive;
     position: relative;
-    border-radius: 5px;
+    border-radius: 7px;
     -webkit-box-shadow: 1px 4px 10px #745af4;
             box-shadow: 1px 4px 10px #745af4;
   }
