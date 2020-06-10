@@ -49,6 +49,7 @@ nav
         li
             list-style: none
             font-family: $primary-font
+            font-size: 18px
             margin: 15px
             .links
                 text-decoration: none
@@ -62,26 +63,45 @@ nav
                 &:hover, &:active
                     border-bottom: 3px solid $secondary-color
 
+.burger
+    a
+        color: $primary-color
+        font-size: 21px
+        transition: 250ms
+        display: none
+        &:hover, &:active
+            color: $secondary-color
+
+
+@media (max-width: 650px)
+    .nav_links
+        .burger
+            display: block
+
+    
 header
     // background-color: #333
-    height: 30vh
+    height: 100%
     position: relative
     display: flex
     flex-direction: column
     align-items: center
-    .header_image
-        // background-image: url("https://res.cloudinary.com/dd4c9cnmd/image/upload/v1591642987/temp_hold/header_txmack.svg") fixed center no-repeat
-        background: url('./assets/images/header.svg') fixed center no-repeat
-        background-color: #444
+    .header_image        
+        background-image: url("https://res.cloudinary.com/dd4c9cnmd/image/upload/v1591642987/temp_hold/header_txmack.svg");
+        background-repeat: no-repeat
         background-size: cover
-        height: 40%
-        // img
-        //     object-fit: cover
+        background-position: center center
+        width: 100%      
+        position: relative
+        background-size: cover
+        height: 55vh
+        
     .actions
         // background-color: #3e4        
         background-color: $white-color
-
+        position: relative
         display: flex
+        bottom: 50px
         font-family: $primary-font
         justify-content: space-evenly
         padding: 25px 0
@@ -198,11 +218,29 @@ footer
     .footer_links
         display: flex
         flex-direction: column
+        justify-content: space-evenly
         a
             text-decoration: none
             color: $white-color
+
     .connect
+        margin-top: 15px
         text-align: center
+        h3
+            font-size: 30px
+        .social_icons
+            display: flex
+            justify-content: space-evenly
+            margin: 10px
+            font-size: 25px
+
+    .footer_actions
+        display: flex
+        flex-direction: column
+        justify-content: space-evenly
+        a
+            color: $white-color
+            text-decoration: none
 
 @media (max-width: 928px)
     .row
