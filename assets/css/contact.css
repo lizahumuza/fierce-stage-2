@@ -80,7 +80,7 @@ html {
     height: 65vh;
     position: relative;
     background: no-repeat;
-    background: url(.jpg);
+    background-image: url("https://res.cloudinary.com/dr2vs6xky/image/upload/v1591649757/x_iadodh.png");
     background-size: cover;
     background-position: center center;
 
@@ -148,7 +148,7 @@ html {
     color: black;
     width: 50%;
     height: 50%;
-    background: url(Map.png);
+    background-image: url();
 
 }
 .tel{
@@ -358,17 +358,16 @@ html {
     .card-details{
       width: 100%;
       margin: 0 auto;
-      margin-top: 10%;
-      margin-bottom: 0% auto;
+      padding: 20px;
     }
     .tel{
-      font-size: 12px;
+      font-size: 18px;
     }
     .loc{
-     font-size: 12px;
+     font-size: 18px;
     }
     .mail{
-     font-size: 12px;
+     font-size: 18px;
     }
   }
   @media screen and (max-width: 890px){
@@ -378,17 +377,16 @@ html {
 .card-details{
   width: 100%;
   margin: 0 auto;
-  margin-top: 10%;
-  margin-bottom: 0% auto;
+ padding: 20px;
 }
 .tel{
-  font-size: 12px;
+  font-size: 18px;
 }
 .loc{
- font-size: 12px;
+ font-size: 18px;
 }
 .mail{
- font-size: 12px;
+ font-size: 18px;
 }
   }
   @media screen and (max-width: 820px){
@@ -490,23 +488,25 @@ html {
   .card-details{
     width: 100%;
     margin: 0 auto;
-    margin-top: 10%;
-    margin-bottom: 0% auto;
+   padding: 20px;
   }
   .grow-1{
     flex-direction: column;
   }
   .grow-0{
-    font-size: 12px;
+    font-size: 20px;
   }
   .tel{
-    font-size: 12px;
+    font-size: 18px;
   }
   .loc{
-   font-size: 12px;
+   font-size: 18px;
   }
  .mail{
-   font-size: 12px;
+   font-size: 18px;
+ }
+ .vl{
+   height: 160px;
  }
   .footer-main {
     -webkit-box-orient: vertical;
@@ -567,10 +567,7 @@ html {
  .card-details{
   width: 100%;
   margin: 0 auto;
-  margin-top: 10%;
-  margin-bottom: 0;
-
-
+  padding: 10px;
  } 
  .flex-item{
    padding: 0;
@@ -579,11 +576,11 @@ html {
    flex-direction: column;
  }
  .grow-0{
-   font-size: 2px;
+   font-size: 12px;
    
  }
  .h1{
-  font-size: 28px;
+  font-size: 25px;
  }
  .tel{
    font-size: 12px;
